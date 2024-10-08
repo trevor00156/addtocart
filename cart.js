@@ -21,7 +21,7 @@ let addtocarticon_calculate=()=>{
 let generateshop=()=>{
 
   if(storeditems.length===0){
-    return `<p> your cart is empty</p>`
+    return shopping_cart.innerHTML="`<p> your cart is empty</p>`";
   }
   else{
   
@@ -40,6 +40,7 @@ let generateshop=()=>{
           <div class='item-name'>${name}</div>
           <div class='item-price'>${price}</div>
           <div class='item-desc'>${desc}</div>
+          <button class="remove_button">Remove</button>
 
         </div>
 
